@@ -21,10 +21,18 @@ echo json_encode($lista);*/
 
 //Carrega um usuario usando o login e a senha
 
-$usuario = new Usuario();
-$usuario->login("nonato", "momo");
+//$usuario = new Usuario();
+//$usuario->login("nonato", "momo");
+//echo $usuario;
 
-echo $usuario;
+$aluno = new Usuario();
+
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@lun0");
+
+$aluno->insert();
+
+echo $aluno;
 
 
 /*$sql = new Sql();
